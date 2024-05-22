@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  static String tag = 'home-page';
+  static String tag = 'home_page';
+
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final alucard = Hero(
+    const alucard = Hero(
       tag: 'hero',
       child: Padding(
         padding: EdgeInsets.all(16.0),
@@ -17,7 +19,7 @@ class HomePage extends StatelessWidget {
       ),
     );
 
-    final welcome = Padding(
+    const welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
         'Bem vindo Leon S. Kennedy',
@@ -25,7 +27,7 @@ class HomePage extends StatelessWidget {
       ),
     );
 
-    final lorem = Padding(
+    const lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
         'Leon S. Kennedy. Informações Classificadas.',
@@ -35,21 +37,21 @@ class HomePage extends StatelessWidget {
 
     final body = Container(
       width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.all(28.0),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(28.0),
+      decoration: const BoxDecoration(
         gradient: LinearGradient(colors: [
           Colors.blue,
           Colors.lightBlueAccent,
         ]),
       ),
-      child: Column(
+      child: const Column(
         children: <Widget>[alucard, welcome, lorem],
       ),
     );
 
     return Scaffold(
-      appBar: new AppBar(
-        title: new Text('Banco de Dados RE'),
+      appBar: AppBar(
+        title: const Text('Banco de Dados RE'),
       ),
       body: body,
     );
