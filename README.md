@@ -2,7 +2,7 @@
 	📱App Super Mario Bross🍄
 </h1>
 <h4 align="center"> 
-	  🚧Em Desenvolvimento| V2.0.0
+	  ✔️ Concluido | V2.0.0
 </h4>
 
 ## Tecnologias Utilizadas
@@ -13,3 +13,7 @@
 </div>
 
 ## Telas de Login e de Perfil
+<div style="text-align: center; display: inline-block">  
+	<img src="https://github.com/Amanda-Torres/Login_app/assets/106416909/e239fff2-5583-4676-a062-9ec432fdc0aa"> &nbsp;&nbsp;
+	<img src="https://github.com/Amanda-Torres/Login_app/assets/106416909/a5c78af0-e322-402d-aa00-f3e146e0d114">
+</div>
