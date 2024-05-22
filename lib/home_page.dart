@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
     const welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Bem vinda \n Princesa Peach',
+        'Princesa Peach',
         textAlign: TextAlign.center,
         style: TextStyle(
             fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.white),
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
     const lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Personalidade:',
+        'Monarca do Reino dos Cogumelos e uma figura central na série de jogos Mario da Nintendo. Conhecida por sua gentileza, beleza e habilidade de liderança, Peach frequentemente se torna alvo de sequestros pelo vilão Bowser, sendo resgatada por Mario. Além de aparecer em muitos jogos de plataforma, Peach também participa de vários spin-offs, como jogos de corrida, esportes e festas.',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
@@ -52,9 +52,27 @@ class HomePage extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Banco de Dados SMB'),
-        backgroundColor: const Color(0xFFf7da22),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: Colors.black,
+                width: 2.0,
+              ),
+            ),
+          ),
+          child: AppBar(
+            title: const Text(
+              'Banco de Dados SMB',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            backgroundColor: const Color(0xFFf7da22),
+          ),
+        ),
       ),
       body: body,
     );
