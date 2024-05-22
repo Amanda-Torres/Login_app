@@ -1,16 +1,21 @@
-# desafio_login
+<h1 align="center"> 
+	   Exercicio Tutorial Flutter 📱📓
+</h1>
+<h4 align="center"> 
+	  ✔️ Concluído | V1.0.0
+</h4>
 
-A new Flutter project.
+## Tecnologias Utilizadas
 
-## Getting Started
+<div style="text-align: center; display: inline-block">  
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" width="65px">
+</div>
 
-This project is a starting point for a Flutter application.
+## Telas de Login e de Perfil
 
-A few resources to get you started if this is your first Flutter project:
+<div align="center" >
+  <img src="https://github.com/Amanda-Torres/Login_app/assets/106416909/92d5a8a2-eafa-44dc-90dd-a58b40be4af8" > &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/Amanda-Torres/Login_app/assets/106416909/3190b47c-49f8-4641-b758-224132054a96" >  
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
