@@ -19,29 +19,47 @@ class _LoginPageState extends State<LoginPage> {
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-        child: Image.asset('assets/umbrella-logo.jpg'),
+        child: Image.asset('assets/mushroom.png'),
       ),
     );
 
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: 'leon@re4.com',
+      initialValue: 'PrincessPeach@smb.com',
       decoration: InputDecoration(
         hintText: 'Email',
         contentPadding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(32.0),
+          borderSide: const BorderSide(
+            color: Color(0xFFBB0005),
+            width: 2.0,
+          ),
+        ),
+        filled: true,
+        fillColor: const Color.fromARGB(136, 255, 255, 255),
       ),
     );
 
     final password = TextFormField(
       autofocus: false,
-      initialValue: 'alguma coisa',
+      initialValue: 'KingToadstool',
       obscureText: true,
       decoration: InputDecoration(
         hintText: 'Senha',
         contentPadding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(32.0),
+          borderSide: const BorderSide(
+            color: Color(0xFFBB0005),
+            width: 2.0,
+          ),
+        ),
+        filled: true,
+        fillColor: const Color.fromARGB(136, 255, 255, 255),
       ),
     );
 
@@ -56,17 +74,22 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
-    final forgotLabel = ElevatedButton(
-      child: const Text('Forgot Password?'),
+    final forgotLabel = TextButton(
       onPressed: () {
         if (kDebugMode) {
           print('Pressed');
         }
       },
+      child: const Text(
+        'Forgot Password?',
+        style: TextStyle(
+          color: Color.fromARGB(255, 24, 119, 197),
+        ),
+      ),
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFADD5F8),
       body: Center(
         child: ListView(
           shrinkWrap: true,

@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         child: CircleAvatar(
           radius: 72.0,
           backgroundColor: Colors.transparent,
-          backgroundImage: AssetImage('assets/leon-avatar.jpg'),
+          backgroundImage: AssetImage('assets/Peach.jpg'),
         ),
       ),
     );
@@ -22,15 +22,17 @@ class HomePage extends StatelessWidget {
     const welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Bem vindo Leon S. Kennedy',
-        style: TextStyle(fontSize: 28.0, color: Colors.white),
+        'Bem vinda \n Princesa Peach',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.white),
       ),
     );
 
     const lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Leon S. Kennedy. Informações Classificadas.',
+        'Personalidade:',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
@@ -40,8 +42,8 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.all(28.0),
       decoration: const BoxDecoration(
         gradient: LinearGradient(colors: [
-          Colors.blue,
-          Colors.lightBlueAccent,
+          Color.fromARGB(255, 214, 157, 170),
+          Color(0xFFde718f),
         ]),
       ),
       child: const Column(
@@ -51,7 +53,8 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Banco de Dados RE'),
+        title: const Text('Banco de Dados SMB'),
+        backgroundColor: const Color(0xFFf7da22),
       ),
       body: body,
     );
